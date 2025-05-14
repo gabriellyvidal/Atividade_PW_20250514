@@ -1,0 +1,16 @@
+CRIAR_TABELA = """
+CREATE TABLE IF NOT EXISTS produto (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+nome TEXT NOT NULL,
+"""
+
+INSERIR = """
+INSERT INTO categoria (id, nome) 
+VALUES (?, ?)
+"""
+
+OBTER_TODOS = """
+SELECT 
+id, nome
+ORDER BY nome
+""" 
